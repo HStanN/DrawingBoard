@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawingView">
+        <attr name="style" format="enum">
+            <enum name="pen" value="0"/>
+            <enum name="text" value="1"/>
+            <enum name="eraser" value="2"/>
+        </attr>
+        <attr name="penstyle" format="enum">
+            <enum name="circle" value="0"/>
+            <enum name="rectangle" value="1"/>
+        </attr>
+        <attr name="stroke" format="float"/>
+        <attr name="color" format="color"/>
+    </declare-styleable>
+</resources>
