@@ -15,25 +15,57 @@
         app:penstyle="circle"
         app:stroke="10"
         />
-    <ImageButton
-        android:id="@+id/pen"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_gravity="bottom"
-        android:layout_margin="10dp"
-        android:src="@drawable/ic_pen"/>
-    <ImageButton
+
+    <ImageView
         android:id="@+id/eraser"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_gravity="bottom|right"
         android:layout_margin="10dp"
         android:src="@drawable/ic_eraser"/>
-    <ImageButton
+    <ImageView
         android:id="@+id/color_picker"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_margin="10dp"
         android:layout_gravity="bottom|center_horizontal"
         android:src="@drawable/ic_colorpicker"/>
+    <SeekBar
+        android:id="@+id/stroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:max="100"
+        android:progress="10"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/undo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_undo"/>
+        <ImageView
+            android:id="@+id/redo"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_redo"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pen"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_pen"/>
 </FrameLayout>
